@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Perlin Noise</title>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="./style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://releases.jquery.com/git/ui/jquery-ui-git.js"></script>
+    <script src="./circumvent.js"></script>
+    <script src="./library.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="inputBox">
+      <input id="input" type="number" placeholder="Enter an Integer" style="width: 200px"><br>
+      
+      <label>Pixel Size: </label><input id="size" style="width: 50px" value="20" type="number"><br>
+      <label>Smooth Count: </label><input type="number" value="1" id="smoothNum" style="width: 50px"><br>
+      <label>Light Scale (Value between 0-1): </label><input id="lightscale" value="0.5" type="number" max="1" min="0"><br>
+      <label>Color Weight (Value between 0-1):<br> R:</label><input type="number" min="0" max="1" value="1" id="R">
+      <label>G:</label><input type="number" min="0" max="1" value="1" id="G">
+      <label>B:</label><input type="number" min="0" max="1" value="1" id="B">
+
+      <br><br><label>Press Enter to generate.</label><br>
+      <p id="loading"></p>
+    </div>
+    
+  </body>
+</html>
